@@ -1,0 +1,11 @@
+HKCR
+{
+	NoRemove AppID
+	{
+		'%APPID%' = s 'CopyTextContentsExt'
+		'CopyTextContentsExt.DLL'
+		{
+			val AppID = s '%APPID%'
+		}
+	}
+}
